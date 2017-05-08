@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<body>
+
+
+<div class="container" ng-app="myApp" ng-controller="MyCtrl">
+	<div class="row">
+		
+	<input type="text" name="nombre"  ng-model="firstName"><br/>
+	<input type="text" name="nombre"  ng-model="lastName"><br>
+
+	<h3>Nombre Completo : {{ firstName + " " +  lastName }} </h3>
+
+		<div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+		  <p>Looping with ng-repeat:</p>
+		  <ul>
+		    <li ng-repeat="x in names">
+		      {{ x }}
+		    </li>
+		  </ul>
+		</div>
+
+	</div>
+</div>
+
+
+<script src="js/angular.min.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+
+<script >
+	
+	var app = angular.module('myApp', []);
+	app.controller('MyCtrl', function($scope) {
+	    $scope.firstName= "John";
+	    $scope.lastName= "Doe";
+	});
+
+</script>
+
+</body>
+</html>

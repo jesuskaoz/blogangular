@@ -1,0 +1,26 @@
+      <div class="row container" ng-controller="UsersCtrl">
+        
+          <label>Usuario </label><input type="text" name="nombre"  ng-model="UserName"><br/>
+          <label>Nombre </label><input type="text" name="nombre"  ng-model="FullName"><br>
+
+          <h3>Usuario : {{ UserName }} </h3>
+          <h3>Nombre  : {{ FullName }} </h3>
+
+            <div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+              <p>Looping with ng-repeat:</p>
+              <ul>
+                <li ng-repeat="x in names">
+                  {{ x }}
+                </li>
+              </ul>
+            </div>
+
+      </div> 
+      
+      <div class="row" ng-controller="myCtrl">
+        <ul>
+          <li ng-repeat="x in myData">
+            {{ x.Id + ', ' + x.Name }}
+          </li>
+        </ul>
+      </div>

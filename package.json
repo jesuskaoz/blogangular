@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Ejemplo Blog con AngularJs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuskaoz/blogangular.git"
+  },
+  "author": "Ing. Jesus Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesuskaoz/blogangular/issues"
+  },
+  "homepage": "https://github.com/jesuskaoz/blogangular#readme"
+}
